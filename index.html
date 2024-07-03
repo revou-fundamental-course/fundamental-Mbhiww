@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Layout</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body onload="askName()">
+    <header>
+        <div class="header-container">
+            <div class="logo"></div>
+            <nav class="navbar">
+                <button>Home</button>
+                <div class="nav-divider"></div>
+                <button>Our Profile</button>
+                <div class="nav-divider"></div>
+                <button>Portfolio</button>
+                <div class="nav-divider"></div>
+                <button>Message Us</button>
+            </nav>
+        </div>
+    </header>
+
+    <h1 id="welcome-message" class="top-welcome">Hi, Welcome To Website</h1>
+
+    <div class="welcome-box">
+        <p>1366x578</p>
+    </div>
+
+    <section class="profiles">
+        <div class="profile">
+            <div class="circle"></div>
+            <p>Jakarta</p>
+        </div>
+        <div class="profile">
+            <div class="circle"></div>
+            <p>Semarang</p>
+        </div>
+        <div class="profile">
+            <div class="circle"></div>
+            <p>Surabaya</p>
+        </div>
+    </section>
+
+    <hr>
+
+    <section class="contact">
+        <div class="form">
+            <h2>Message Us</h2>
+            <form id="contactForm">
+                <label for="name">Nama :</label>
+                <input type="text" id="name" name="name">
+                
+                <label for="dob">Tanggal Lahir :</label>
+                <input type="date" id="dob" name="dob">
+                
+                <label for="gender">Jenis Kelamin :</label>
+                <div class="gender-options">
+                    <input type="radio" id="male" name="gender" value="Laki-Laki">
+                    <label for="male">Laki-Laki</label>
+                    <input type="radio" id="female" name="gender" value="Perempuan">
+                    <label for="female">Perempuan</label>
+                </div>
+                
+                <label for="message">Pesan :</label>
+                <textarea id="message" name="message"></textarea>
+                
+                <button type="button" onclick="submitForm()">Submit</button>
+            </form>
+        </div>
+        <div class="form-output">
+            <h2>Submitted Data</h2>
+            <p id="currentTime">Current time: </p>
+            <p id="outputName">Nama: </p>
+            <p id="outputDob">Tanggal Lahir: </p>
+            <p id="outputGender">Jenis Kelamin: </p>
+            <p id="outputMessage">Pesan: </p>
+        </div>
+    </section>
+
+    <footer>
+        <p>Created By Mbhiww</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
